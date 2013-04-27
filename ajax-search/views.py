@@ -68,7 +68,7 @@ def search(request):
 	for comp in parts[1:]:
 		m=getattr(m,comp)
 
-	template_name = "search.html"
+	template_name = settings.SEARCH_RESULT_TEMPLATE
 	c=RequestContext(request)
 	
 	if 'q' in request.GET:
@@ -79,6 +79,6 @@ def search(request):
 		words = query.split()
 		count = len(words)
 		model_list = m()
-		return render_to_response(template_name, {'searchform':SearchForm(), 'query':query, 'latestt':model_list, 'timenow':datetime.datetime.now()},c)
+		return render_to_response(template_name, {'searchform':SearchForm(), 'query':query, 'items_list':model_list, 'timenow':datetime.datetime.now()},c)
 	else:
 		return render_to_response(template_name, {'searchform':SearchForm()})
