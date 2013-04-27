@@ -1,13 +1,13 @@
-django-selectable
+django-ajax-search
 ===================
 
-Tools and widgets for using/creating auto-complete selection widgets using Django and jQuery UI.
+A customizable AJAX-powered search for Django.
 
 Features
 -----------------------------------
 
-- Works with the latest jQuery UI Autocomplete library
-- Auto-discovery/registration pattern for defining lookups
+- Works with the latest jQuery library version
+- Displays instant search results as you type
 
 
 Installation Requirements
@@ -16,7 +16,6 @@ Installation Requirements
 - Python 2.6 or Python 2.7
 - `Django <http://www.djangoproject.com/>`_ >= 1.3
 - `jQuery <http://jquery.com/>`_ >= 1.4.4
-- `jQuery UI <http://jqueryui.com/>`_ >= 1.8
 
 .. note::
 
