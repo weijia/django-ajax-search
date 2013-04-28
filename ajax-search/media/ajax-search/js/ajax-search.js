@@ -1,3 +1,5 @@
+var pathname = window.location.origin+"/ajax-search/xhr_search";
+
 $(document).ready(function(){
 if((!($("#searchdropdown:hover").length)) && (!($("#ajaxsearch:hover").length))){
  $("#searchdropdown").html('');
@@ -26,7 +28,8 @@ $(this).data("hasfocus", true);
   $("#searchdropdown").show();
  if (request){
 request.abort();}
-  request=  $.post("http://firstquarto.com/resources/xhr_search", { 
+  
+  request=  $.post(pathname, { 
     query: $("#ajaxsearch").val() 
 },
     function(data) {
@@ -40,7 +43,7 @@ $("#ajaxsearch").mouseover(function() {
   $("#searchdropdown").show();
  if (request){
 request.abort();}
-  request=  $.post("http://firstquarto.com/resources/xhr_search", { 
+  request=  $.post(pathname, { 
     query: $("#ajaxsearch").val()
 },
     function(data) {
@@ -66,7 +69,7 @@ $("#ajaxsearch").keyup(function() {
  if (request){
 request.abort();}
 if ($("#ajaxsearch").val()){
-  request= $.post("http://firstquarto.com/resources/xhr_search", { 
+  request= $.post(pathname, { 
     query: $("#ajaxsearch").val() 
 },
     function(data) {
@@ -104,7 +107,7 @@ $(document).ready(function() {
 
 
 function ajaxsearch(){
-$.post("http://firstquarto.com/resources/xhr_search", { 
+$.post(pathname, { 
     query: $("#ajaxsearch").val()
 },
     function(data) {
