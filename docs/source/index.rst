@@ -6,7 +6,9 @@
 Welcome to Django-ajax-search's documentation!
 ==============================================
 
-Django-ajax-search is an AJAX-powered search-app for Django based websites.     
+Django-ajax-search is an AJAX-powered search-app for Django based websites.         
+
+
 In addition to displaying instant dropdown search results as one types, it's fully customizable and easy to use.     
        
 The **source code** for this app is hosted at https://github.com/side-winder/django-ajax-search.    
