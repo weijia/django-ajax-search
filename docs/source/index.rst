@@ -16,6 +16,8 @@ The **source code** for this app is hosted at https://github.com/side-winder/dja
 .. toctree::
    :maxdepth: 2
    
-   Getting started with Django-ajax-search   
-   Search tool
+   Getting started <start>  
+   Configuration <config>
+   Search tools <searchtools>
+   Customize <customization>
 	
