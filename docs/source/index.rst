@@ -16,8 +16,8 @@ The **source code** for this app is hosted at https://github.com/side-winder/dja
 .. toctree::
    :maxdepth: 2
    
-   Getting started <start>  
-   Configuration <config>
-   Search tools <searchtools>
-   Customize <customization>
+   Getting started :doc:`start`  
+   Configuration :doc:'config'
+   Search tools :doc:'searchtools'
+   Customize :doc:'customization'
 	
