@@ -13,5 +13,6 @@ You may also make other changes to the CSS file to change the look and feel of t
     
 Your search is now set-up. Try it by typing in the search-box.    
     
-In case of any issues, include the issue on Github after searching existing ones. You may also join and mail to the [django-ajax-search Google Group](https://groups.google.com/forum/?fromgroups#!forum/django-ajax-search).    
+In case of any issues, include the issue on Github after searching existing ones. You may also join and mail to the (https://groups.google.com/forum/?fromgroups#!forum/django-ajax-search Title="django-ajax-search Google Group").    
+    
 You may also mail to me directly at prasenjit0625@gmail.com.
