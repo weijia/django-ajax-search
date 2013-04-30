@@ -1,6 +1,5 @@
 Configuration
--------------
--------------
+=============
 
 The jQuery library is not included in the distribution but must be included
 in your templates. Import it::
