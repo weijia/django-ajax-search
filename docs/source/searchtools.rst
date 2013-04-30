@@ -1,5 +1,5 @@
-Configuration
-=============
+Search tools
+============
 
 The configuration is almost done. All the remains is to define a search function.    
      
