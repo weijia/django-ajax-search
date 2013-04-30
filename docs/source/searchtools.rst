@@ -20,4 +20,4 @@ Define a new function on the path that you provided for the AJAX_SEARCH_HELPER s
 
 You may stop at the third line to return a very simple list that matches exactly the query provided with the title. The 'for' loops break the search query down and search the parts and various combinations thereof. We suggest you use this method.    
     
-Now all you need to do is specify the position of the drop-down menu. Read about it :doc:`here</config>`.
+Now all you need to do is specify the position of the drop-down menu. Read about it :doc:`here</customization>`.
