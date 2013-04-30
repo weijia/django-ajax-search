@@ -13,11 +13,6 @@ In addition to displaying instant dropdown search results as one types, it's ful
        
 The **source code** for this app is hosted at https://github.com/side-winder/django-ajax-search.    
 
-   :doc:`../start`  
-   :doc:'../config'
-   :doc:'../searchtools'
-   :doc:'../customization'
-
 .. toctree::
    :maxdepth: 2
    
