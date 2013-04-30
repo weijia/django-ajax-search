@@ -40,6 +40,7 @@ Once installed you should add the urls to your root url patterns::
         url(r'^ajax-search/',include('ajax-search.urls')),
     )
 
+Full documentation at http://django-ajax-search.readthedocs.org/
 	
 Additional Help/Support
 -----------------------------------
