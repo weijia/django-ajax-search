@@ -17,9 +17,9 @@ Specify the maximum number of instant-search results you'd like to see in the se
     
     AJAX_SEARCH_LIMIT = 8
 
-Specify the search helper function that we shall configure in a moment (uset he full path)::
+Specify the search helper function that we shall configure in a moment (use the full path)::
     
-    AJAX_SEARCH_HELPER = 'cross.views.search_helper'
+    AJAX_SEARCH_HELPER = 'app.views.search_helper'
 
 Specify the search-results template where you'd like to see the results displayed. We shall configure it shortly::
     
