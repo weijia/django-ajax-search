@@ -38,4 +38,4 @@ In your templates where you want to have the search form, include the code (make
       <input id="searchbuttonmain" type="submit" class="subbtn" value="Search">
     </form>
 
-Now that you've configured the basics, move on to the :doc:`Search Tools</searchtools>' section.
+Now that you've configured the basics, move on to the :doc:`Search Tools</searchtools>` section.
