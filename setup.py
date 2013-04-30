@@ -14,7 +14,7 @@ setup(
     license='BSD',
     description='A customizable AJAX-powered search for Django.',
     long_description=README,
-    url='http://www.example.com/',
+    url='http://prasenjitsingh.com/opensource/django-ajax-search/',
     author='Prasenjit Singh',
     author_email='prasenjit0625@gmail.com',
     classifiers=[
