@@ -1,6 +1,6 @@
-Installation Requirements
------------------------------------
------------------------------------
+Getting started
+---------------
+---------------
 
 - Python 2.6 or Python 2.7
 - `Django <http://www.djangoproject.com/>`_ >= 1.3
@@ -28,3 +28,5 @@ Once installed you should add the urls to your root url patterns::
         # Other patterns go here
         url(r'^ajax-search/',include('ajax-search.urls')),
     )
+
+Now that you're done with the setup, :doc:`configure your installation</config>`.
