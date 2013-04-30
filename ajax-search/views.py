@@ -37,7 +37,7 @@ def xhr_search(request):
 		words = query.split()
 		count = len(words)
 		
-		model_list = m()
+		model_list = m(count, query)
 		
 		req ['name'] =''
 		for e in model_list[0:num]:
@@ -78,7 +78,7 @@ def search(request):
 		
 		words = query.split()
 		count = len(words)
-		model_list = m()
+		model_list = m(count, query)
 		return render_to_response(template_name, {'searchform':SearchForm(), 'query':query, 'items_list':model_list, 'timenow':datetime.datetime.now()},c)
 	else:
 		return render_to_response(template_name, {'searchform':SearchForm()})
