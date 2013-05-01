@@ -13,7 +13,7 @@ setup(
     include_package_data=True,
     license='BSD',
     description='A customizable AJAX-powered search for Django.',
-#    long_description=README,
+    long_description=open('README.rst').read(),
     url='http://prasenjitsingh.com/opensource/django-ajax-search/',
     author='Prasenjit Singh',
     author_email='prasenjit0625@gmail.com',
