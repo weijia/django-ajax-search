@@ -6,5 +6,6 @@ from django.utils.safestring import mark_safe
 
 
 class SearchForm(forms.Form):
-	
-	q = forms.CharField(widget=forms.TextInput(attrs={'id':'ajaxsearch', 'class':'ajaxsearchmain', 'placeholder':'Search articles and users'}), required=False)
+    q = forms.CharField(widget=forms.TextInput(
+        attrs={'id': 'ajaxsearch', 'class': 'ajaxsearchmain', 'placeholder': 'Search articles and users'}),
+                        required=False)
