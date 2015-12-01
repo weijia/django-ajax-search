@@ -25,11 +25,12 @@ from django.conf import settings
 
 def xhr_search(request):
     num = settings.AJAX_SEARCH_LIMIT
-    c = settings.AJAX_SEARCH_HELPER
-    parts = c.split('.')
-    m = __import__(parts[0])
-    for comp in parts[1:]:
-        m = getattr(m, comp)
+    # c = settings.AJAX_SEARCH_HELPER
+    # parts = c.split('.')
+    # m = __import__(parts[0])
+    # for comp in parts[1:]:
+    #     m = getattr(m, comp)
+    m = get_search_helper()
 
     req = {}
     if request.is_ajax():
@@ -45,7 +46,7 @@ def xhr_search(request):
             req['name'] += """<div class="searchdropdowndiv"><a href='"""
             req['name'] += e.get_absolute_url()
             req['name'] += """' style="text-decoration:none;"><p style="font-size:14px; color:#000000;">"""
-            req['name'] += e
+            req['name'] += e.get_one_description()
             req['name'] += """</p></a></div>"""
         if model_list.count() > num:
             req[
@@ -66,14 +67,7 @@ def xhr_search(request):
 
 
 def search(request):
-    c = settings.AJAX_SEARCH_HELPER
-    parts = c.split('.')
-    # m = __import__(parts[0])
-    # for comp in parts[1:]:
-    #     m = getattr(m, comp)
-    module_name = '.'.join(parts[0:-1])
-    module_instance = importlib.import_module(module_name)
-    m = getattr(module_instance, parts[-1])
+    m = get_search_helper()
 
     template_name = settings.SEARCH_RESULT_TEMPLATE
     c = RequestContext(request)
@@ -92,3 +86,15 @@ def search(request):
                                                   'timenow': datetime.datetime.now()}, c)
     else:
         return render_to_response(template_name, {'searchform': SearchForm()})
+
+
+def get_search_helper():
+    c = settings.AJAX_SEARCH_HELPER
+    parts = c.split('.')
+    # m = __import__(parts[0])
+    # for comp in parts[1:]:
+    #     m = getattr(m, comp)
+    module_name = '.'.join(parts[0:-1])
+    module_instance = importlib.import_module(module_name)
+    m = getattr(module_instance, parts[-1])
+    return m
